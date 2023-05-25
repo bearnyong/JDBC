@@ -1,0 +1,40 @@
+package com.greedy.section01;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.util.Properties;
+
+public class Application03 {
+
+	public static void main(String[] args) {
+		
+		Properties prop = new Properties();
+		Connection con = null;
+		
+		try {
+			/* FileReader로 파일 읽어오기 그리고 prop에 저장 */
+			prop.load(new FileReader("src/com/greedy/section01/connection/jdbc-config.properties"/*src부터 상대경로*/));
+			System.out.println(prop);
+			
+			String driver = prop.getProperty("driver"); /*getProperty 파일 읽어오기*/ /*텍스트 파일이면 다른 방식... 어쩌구..*/
+			String user = prop.getProperty("user");
+			String pass = prop.getProperty("pass");
+			String url = prop.getProperty("url");
+			
+			Class.forName(driver);
+			con = DriverManager.getConnection(url, user, pass)
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+
+}

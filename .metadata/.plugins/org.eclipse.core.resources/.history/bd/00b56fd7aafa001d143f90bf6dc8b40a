@@ -1,0 +1,16 @@
+package com.greedy.section02.template;
+
+import java.io.FileReader;
+import java.sql.Connection;
+import java.util.Properties;
+
+public class JDBCTemplate {
+	
+	public static Connection getConnection() {
+		Connection con = null;
+		
+		Properties prop = new Properties();
+		
+		prop.load(new FileReader(""));
+	}
+}

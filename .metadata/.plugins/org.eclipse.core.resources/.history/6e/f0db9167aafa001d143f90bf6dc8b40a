@@ -1,0 +1,5 @@
+package com.greedy.section02.template;
+
+public class JDBCTemplate {
+
+}

@@ -1,0 +1,28 @@
+package com.greedy.section01;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.sql.Connection;
+import java.util.Properties;
+
+public class Application03 {
+
+	public static void main(String[] args) {
+		
+		Properties prop = new Properties();
+		Connection con = null;
+		
+		try {
+			prop.load(new FileReader("src/com/greedy/section01/connection/jdbc-config.properties"));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+
+}
