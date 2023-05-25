@@ -34,7 +34,7 @@ public class test03 {
 	       rset = stmt.executeQuery(query);
 	         
 	       if(rset.next()) {
-	          System.out.println("조회 결과 : " + rset.getString("COUNT(*)")+"명");
+	          System.out.println(rset.getString("조회 결과 : " + "COUNT(*)")+"명");
 	       }
 	    }catch (SQLException e) {
 	       e.printStackTrace();

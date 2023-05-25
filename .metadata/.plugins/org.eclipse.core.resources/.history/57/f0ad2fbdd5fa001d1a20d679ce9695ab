@@ -21,7 +21,7 @@ public class test03 {
 	    try {
 	       stmt = con.createStatement();
 	         
-	       System.out.print("부서명을 입력하세요 : ");
+	       System.out.println("부서명을 입력하세요 : ");
 	       Scanner sc = new Scanner(System.in);
 	         
 	       String deptcode = sc.nextLine();
@@ -34,7 +34,7 @@ public class test03 {
 	       rset = stmt.executeQuery(query);
 	         
 	       if(rset.next()) {
-	          System.out.println("조회 결과 : " + rset.getString("COUNT(*)")+"명");
+	          System.out.println(rset.getString("COUNT(*)")+"명");
 	       }
 	    }catch (SQLException e) {
 	       e.printStackTrace();
