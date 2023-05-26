@@ -1,0 +1,13 @@
+package com.greedy.section01;
+
+import java.sql.Connection;
+
+public class Application04 {
+
+	public static void main(String[] args) {
+		
+		Connection con = JDBCTemplate.getConnection();
+
+	}
+
+}

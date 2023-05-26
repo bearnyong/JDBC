@@ -1,0 +1,28 @@
+package com.greedy.model.dto;
+
+import java.sql.Date;
+
+/* DTO의 요건
+ * 1. 모든 필드 private
+ * 2. 기본 생성자 필수/ 매개변수있는 생성자 선택
+ * 3. setter/getter 필수
+ * 4. toString 선택(거의 함)
+ * 
+ * */
+public class EmployeeDTO {
+	private String empId;
+	private String empName;
+	private String empNo;
+	private String email;
+	private String phone;
+	private String deptCode;
+	private String jobCode;
+	private int salary;
+	private double bonus;
+	private Date hireDate;
+	private Date entDate;
+	private String eentYn;
+	
+	
+	
+}

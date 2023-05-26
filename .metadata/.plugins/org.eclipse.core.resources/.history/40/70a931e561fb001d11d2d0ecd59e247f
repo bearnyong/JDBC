@@ -1,0 +1,23 @@
+package com.greedy.section01;
+
+import static com.greedy.common.JDBCTemplate.getConnection;
+
+import java.beans.Statement;
+import java.sql.Connection;
+import java.sql.ResultSet;
+
+public class Application03 {
+
+	public static void main(String[] args) {
+		Connection con = getConnection();
+		Statement stmt = null;
+		ResultSet rset = null;
+		
+		EmployeeDTO selectEmp = null; //Emplyee DTO ¸¸µé±â
+		
+		
+		
+		
+	}
+
+}
