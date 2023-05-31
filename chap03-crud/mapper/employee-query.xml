@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key = "employeetestnyong">
+		INSERT
+		  INTO EMPLOYEE
+		  (
+		  	EMP_ID,
+		    EMP_NAME,
+		    DEPT_CODE,
+		    SALARY,
+		    EMP_NO,
+		    EMAIL,
+		    JOB_CODE,
+		    SAL_LEVEL,
+		    HIRE_DATE
+		  )
+		  VALUES
+		  (
+		  	SEQ_EMPID2.NEXTVAL,
+		    ? ,
+		    ? ,
+		    ? ,
+		    ? ,
+		    ? ,
+		    ? ,
+		    ? ,
+		    SYSDATE
+		  )
+	</entry>
+	
+	<entry key = "selectEmployeeOne">
+		SELECT
+			   EMP_NAME,
+			   EMAIL,
+			   PHONE,
+			   SALARY,
+			   HIRE_DATE,
+			   ENT_YN
+		 FROM EMPLOYEE
+		WHERE EMP_ID = ?
+	</entry>
+	
+	<entry key = "updateEmployee">
+		UPDATE EMPLOYEE
+		
+		   SET
+		   	EMP_NAME = ?,
+		   	ENT_YN = ?
+		   	
+		 WHERE EMP_ID = ?
+		   
+	</entry>
+	
+	<entry key="deleteEmployee">
+	   UPDATE EMPLOYEE
+	      SET ENT_YN = 'Y'
+	     WHERE EMP_ID = ?
+	</entry>
+	
+</properties>

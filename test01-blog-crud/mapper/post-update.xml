@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key = "upBlogName">
+		UPDATE POST
+		
+		   SET
+		   	POST_TITLE = ?,
+		   	POST_TIME = SYSDATE
+		   	
+		 WHERE POST_NUM = ?
+	</entry>
+</properties>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key = "insertNewPost">
+		INSERT
+		  INTO POST
+		  (
+		    POST_NUM,
+		    BLOG_NUM,
+		    CATE_NUM,
+		    POST_TITLE,
+		    POST_CON,
+		    POST_TIME,
+		    STATE
+		  )
+		  VALUES
+		  (
+		    SEQ_POSTNUM.NEXTVAL,
+		    ? ,
+		    ? ,
+		    ? ,
+		    ? ,
+		    SYSDATE ,
+		    'Y'
+		  )
+	</entry>
+</properties>
